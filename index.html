@@ -16,6 +16,16 @@
 
 <body>
     <div class="container-fluid navalert-container">
+        <div class="container-fluid alert-container">
+            <div class="row d-none d-sm-block">
+                <div class="col-12">
+                    <div class="site-wide-alert alert alert-warning">
+                        <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for 6! <a
+                            href="">See here for details!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <nav class="navbar navbar-dark navbar-expand-sm">
             <a href="/" class="navbar-brand">Whiskey Drop</a>
 
@@ -45,26 +55,14 @@
                 </ul>
                 <div class="d-none d-md-block">
                     <p class="navbar-text my-auto mr-2"><i>Great Whiskey delivered to your door!</i></p>
-                    <a href="/login">Sign In / Sign Up</a>
+                    <a href="/login" class="btn btn--cta btn--red">Sign In / Sign Up</a>
                 </div>
         </nav>
     </div>
 
-
-    <div class="container alert-container">
-        <div class="row d-none d-sm-block">
-            <div class="col-12">
-                <div class="alert alert-warning">
-                    <strong>Sale Now On!</strong> We've got a sale on. Get a 12 month subscription for 6! <a href="">See
-                        here for details!</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div class="container-fluid callout-container">
         <!-- Callout -->
-        <div class="opaque-overlay">   </div>
+        <div class="opaque-overlay"> </div>
         <div class="row">
             <div class="col-12">
                 <section class="callout jumbotron text-center">
@@ -85,11 +83,13 @@
     </div>
 
     <!-- Quotes -->
-    <div class="container quotes-container">
+    <div class="container-wrapper">
+    <div class="container quotes-container content-container">
         <section class="quotes">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 page-header">
                     <h2 class="text-uppercase">Quotes:</h2>
+                    <hr class="block-divider block-divider--short">
                 </div>
             </div>
             <div class="row">
@@ -123,19 +123,22 @@
         </section>
         <!-- /.quotes -->
     </div>
+</div>
 
     <!-- Features -->
-    <div class="features-container">
+    <div class="container-wrapper container-wrapper--red">
+    <div class="container features-container content-container">
         <section class="features">
             <div class="row">
-                <div class="col-12 my-5">
+                <div class="col-12 page-header">
                     <h2 class="text-uppercase">Features:</h2>
+                    <hr class="block-divider block-divider--short block-divider--white">
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3><i class="fa-solid fa-gift d-none d-sm-inline"></i> Feature 1<span
+                        <h3><i class="fa-solid fa-gift d-none d-sm-block"></i> Feature 1<span
                                 class="badge badge-success">NEW!</span></h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore
@@ -148,7 +151,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="feature">
-                        <h3><i class="fa-solid fa-credit-card d-none d-sm-inline"></i> Feature 2</h3>
+                        <h3><i class="fa-solid fa-credit-card d-none d-sm-block"></i> Feature 2</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore
                             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -160,7 +163,7 @@
                 </div>
                 <div class="col-12 d-md-none d-lg-block col-lg-4">
                     <div class="feature">
-                        <h3><i class="fa-solid fa-circle-xmark d-none d-sm-inline"></i> Feature 3</h3>
+                        <h3><i class="fa-solid fa-circle-xmark d-none d-sm-block"></i> Feature 3</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore
                             et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -174,6 +177,7 @@
         </section>
         <!-- /.features -->
     </div>
+</div>
     <section>
         <h2>Monthly Favourites</h2>
         <table class="table">
